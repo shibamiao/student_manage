@@ -1,0 +1,70 @@
+<html>
+<head>
+<title >学籍管理</title>
+<mesa http-equiv="Content-Type" content="text/html;charset=gb2312">
+<script type="text/javascript" src="Ajax.js"></script>
+<link rel = "stylesheet" href = "show.css" type = "text/css" media = "screen"/>
+</head>
+&nbsp;&nbsp;&nbsp;<h1>欢迎进入学籍管理系统</h1>
+<hr><hr>
+<p>
+<body  >
+<center>
+<h2 onmouseover= "style.color='blue'" onmouseout="style.color='green'">查找</h2>
+<tr><input type="text" id="infor" value=""></tr>
+<tr><input name="Submit" type="submit" value="提交" onclick=showinfo()>
+<input name="Reset" type="reset" align="center" value="重设"></tr>
+<br><br>
+<div >
+<form >
+<table border="1" >
+<tr valign="baseline">
+<td nowrap align="center" size="8">学号</td>
+<td nowrap align="center" size="32">姓名</td>
+<td nowrap align="center" size="8">性别</td>
+<td nowrap align="center" size="8">年龄</td>
+<td nowrap align="center" size="32">所在系</td>
+<tr id = "server_ans">
+</tr>
+</table>
+</div>
+</form>
+</center>
+</body>
+</p>
+<hr >
+<hr>
+<p>
+<form method="post" name="form1" action="insert.php">
+<center>
+<body>
+<h2 onmouseover="style.color='blue'" onmouseout="style.color='green'">我要注册</h2>
+<table  >
+<tr valign="baseline">
+<td nowrap align="center">学号:</td>
+<td><input type="text" name="stu_num" value="" size="32"></td>
+</tr>
+<tr valign="baseline">
+<td nowrap align="center">姓名:</td>
+<td><input type="text" name="stu_name" value="" size="32"></td>
+</tr>
+<span id="rb">您的性别是：</span><input type="radio" name="stu_sex" align="center" value="f" ;><span id="rb">男</span>
+<input type="radio" name="stu_sex" align="center" value="m" ;><span id="rb">女</span>
+
+<tr valign="baseline">
+<td nowrap align="center">年龄:</td>
+<td><input type="text" name="stu_age" value="" size="32"></td>
+</tr>
+<tr valign="baseline">
+<td nowrap align="center">所在系:</td>
+<td><input type="text" name="stu_dept" value="" size="32"></td>
+</tr>
+<tr valign="baseline">
+<td colspan="2" align="center" nowrap><input name="Submit" type="submit" value="提交">
+<input name="Reset" type="reset" align="center" value="重设"></td>
+</tr>
+</body>
+</center>
+</form>
+</p>
+</html>
